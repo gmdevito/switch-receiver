@@ -8,7 +8,7 @@ radio.onReceivedString(function (receivedString) {
     }
 })
 input.onLogoEvent(TouchButtonEvent.Touched, function () {
-    basic.showIcon(IconNames.Heart)
+    basic.showIcon(IconNames.Chessboard)
     basic.pause(2000)
     basic.clearScreen()
 })
