@@ -7,4 +7,9 @@ radio.onReceivedString(function (receivedString) {
         music.startMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once)
     }
 })
+input.onLogoEvent(TouchButtonEvent.Touched, function () {
+    basic.showIcon(IconNames.Heart)
+    basic.pause(2000)
+    basic.clearScreen()
+})
 radio.setGroup(1)
