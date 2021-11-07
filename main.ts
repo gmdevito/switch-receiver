@@ -1,4 +1,5 @@
 radio.onReceivedString(function (receivedString) {
+    basic.clearScreen()
     music.stopAllSounds()
     if (receivedString == "closed") {
         basic.showIcon(IconNames.Heart)
