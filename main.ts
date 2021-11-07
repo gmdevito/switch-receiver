@@ -1,10 +1,10 @@
-input.onButtonPressed(Button.A, function () {
-    basic.clearScreen()
-})
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "closed") {
         basic.showIcon(IconNames.Heart)
         music.startMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once)
+    } else {
+        basic.showIcon(IconNames.Asleep)
+        music.startMelody(music.builtInMelody(Melodies.Nyan), MelodyOptions.Once)
     }
 })
 input.onLogoEvent(TouchButtonEvent.Touched, function () {
