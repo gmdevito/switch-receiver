@@ -1,4 +1,5 @@
 radio.onReceivedString(function (receivedString) {
+    music.stopAllSounds()
     if (receivedString == "closed") {
         basic.showIcon(IconNames.Heart)
         music.startMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once)
