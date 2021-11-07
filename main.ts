@@ -14,4 +14,3 @@ input.onLogoEvent(TouchButtonEvent.Touched, function () {
     basic.pause(2000)
     basic.clearScreen()
 })
-radio.setGroup(1)
